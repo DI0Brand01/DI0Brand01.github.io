@@ -5,6 +5,8 @@ body{
 p {
 color: red;
 }
-header{
-    
+.redRect{
+    width: 100px;
+    height: 100px;
+    background-color: red;
 }
