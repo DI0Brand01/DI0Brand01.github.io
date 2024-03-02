@@ -1,12 +1,62 @@
-body{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-p {
-color: red;
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.redRect{
-    width: 100px;
-    height: 100px;
-    background-color: red;
+
+.chat-window {
+    width: 400px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.chat-message .message-text {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.chat-message.sent .message-text {
+    background-color: #4CAF50;
+}
+
+.chat-message.received .message-text {
+    background-color: #007bff;
+}
+
+#message-input {
+    width: calc(100% - 75px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    width: 70px;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
 }
